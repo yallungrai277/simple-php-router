@@ -1,5 +1,5 @@
 {
-    "name": "jsonrai277/simple-php-router",
+    "name": "jsonrai277/json-php-router",
     "description": "Simple php router",
     "type": "library",
     "require": {
