@@ -4,11 +4,6 @@ namespace JsonRai277\PhpRouter;
 
 class Router
 {
-    public function __construct()
-    {
-        echo 'here';
-    }
-
     public static function handle($method = 'GET', $path = '/', $fileNameOrCallable = '')
     {
         $currentMethod = $_SERVER['REQUEST_METHOD'];
