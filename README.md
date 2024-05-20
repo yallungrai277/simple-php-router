@@ -15,6 +15,11 @@ composer require jsonrai277/json-php-router:dev-main@dev
 Usage.
 
 ```php
+
+use JsonRai277\PhpRouter\Router;
+
+require 'vendor/autoload.php';
+
 Router::handle('GET', '/', 'home.php');
 
 Router::get('/', 'home.php');
