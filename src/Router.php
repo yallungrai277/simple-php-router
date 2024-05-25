@@ -7,7 +7,7 @@ class Router
     /**
      * Handle incoming request.
      */
-    public static function handle($method = 'GET', $path = '/', $fileNameOrCallable = '')
+    public static function handle($method = 'GET', $path = '/', $fileNameOrCallable = ''): mixed
     {
         $currentMethod = $_SERVER['REQUEST_METHOD'];
         $currentUri = $_SERVER['REQUEST_URI'];
@@ -31,7 +31,7 @@ class Router
     /**
      * Handle get request.
      */
-    public static function get($path = '/', $fileNameOrCallable = '')
+    public static function get($path = '/', $fileNameOrCallable = ''): mixed
     {
         return self::handle('GET', $path, $fileNameOrCallable);
     }
@@ -39,7 +39,7 @@ class Router
     /**
      * Handle post request.
      */
-    public static function post($path = '/', $fileNameOrCallable = '')
+    public static function post($path = '/', $fileNameOrCallable = ''): mixed
     {
         return self::handle('POST', $path, $fileNameOrCallable);
     }
@@ -47,7 +47,7 @@ class Router
     /**
      * Handle put request.
      */
-    public static function put($path = '/', $fileNameOrCallable = '')
+    public static function put($path = '/', $fileNameOrCallable = ''): mixed
     {
         return self::handle('PUT', $path, $fileNameOrCallable);
     }
@@ -55,7 +55,7 @@ class Router
     /**
      * Handle patch request.
      */
-    public static function patch($path = '/', $fileNameOrCallable = '')
+    public static function patch($path = '/', $fileNameOrCallable = ''): mixed
     {
         return self::handle('PATCH', $path, $fileNameOrCallable);
     }
@@ -63,7 +63,7 @@ class Router
     /**
      * Handle delete request.
      */
-    public static function delete($path = '/', $fileNameOrCallable = '')
+    public static function delete($path = '/', $fileNameOrCallable = ''): mixed
     {
         return self::handle('DELETE', $path, $fileNameOrCallable);
     }
