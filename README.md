@@ -7,7 +7,7 @@ Simple router package.
 You can install this package using
 
 ```bash
-composer require jsonrai277/json-php-router:dev-main@dev
+composer require jsonrai277/json-php-router
 ```
 
 ## Usage
